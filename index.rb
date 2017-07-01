@@ -49,3 +49,17 @@ post '/' do
   m.exec
   json m.result
 end
+
+if development?
+  get '/test' do
+    erb :test
+  end
+end
+
+__END__
+@@test
+<form method='post' action='/'>
+  <textarea name="text">
+  </textarea>
+  <input type="submit">
+</form>
