@@ -5,3 +5,7 @@ source "https://rubygems.org"
 gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'natto'
+gem 'puma'
+gem 'capistrano', '3.7.2'
+gem 'capistrano-puma'
+gem 'capistrano-bundler'

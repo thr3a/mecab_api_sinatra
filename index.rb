@@ -36,6 +36,7 @@ class MyMecab
   end
 end
 
+set :server, :puma
 set :json_content_type, :json
 
 get '/' do
