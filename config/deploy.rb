@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock "3.7.2"
+lock "3.9.1"
 
 set :application, "mecab_api"
 set :repo_url, "https://github.com/thr3a/mecab_api_sinatra.git"
