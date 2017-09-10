@@ -24,6 +24,7 @@ class MyMecab
       next if(self.options[:exclude].include?(feature[0]))
       next if(self.options[:only].length > 0 && !self.options[:only].include?(feature[0]))
       if self.options[:type] == 'wakati'
+        next if(n.feature == '名詞' && n.surface.match(/\d/))
         self.result << n.surface
       else
         self.result << {
